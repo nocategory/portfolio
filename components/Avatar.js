@@ -146,7 +146,7 @@ c-10 -11 -36 -45 -58 -73 -46 -61 -79 -86 -103 -77 -34 13 -12 62 68 150 25
 
     <style jsx>{`
       svg {
-        background: #fff;
+        background: rgba(255, 255, 255, 0.8);
         width: 400px;
         height: 400px;
       }

@@ -1,15 +1,18 @@
 import Head from 'next/head'
 import Avatar from '@components/Avatar'
+import IntroText from '@components/IntroText'
 
 const Home = () => (
+  // HOMEPAGE
   <div className="container">
     <Head>
       <title>nocategory's portfolio</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon.ico" /> // TODO: change the favicon
     </Head>
 
     <main>
       <Avatar />
+      <IntroText />
     </main>
 
     <style jsx>{`
@@ -23,7 +26,6 @@ const Home = () => (
       }
 
       main {
-        padding: 5rem 0;
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -42,10 +44,12 @@ const Home = () => (
     <style jsx global>{`
       html,
       body {
+        color: rgba(255, 255, 255, 0.8);
         padding: 0;
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Helvetica, Arial, sans-serif, Ubuntu, 'Apple Color Emoji',
+          'Segoe UI Emoji', 'Segoe UI Symbol';
       }
 
       * {
