@@ -1,9 +1,7 @@
 import Link from 'next/link'
 
-const Menu = (props) => {
+const Menu = ({ activePage }) => {
   const menuItems = ['home', 'about', 'work', 'oss'] // TODO: Think better about these
-
-  const { activePage } = props
 
   return (
     <div className="menu-wrapper">
