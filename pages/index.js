@@ -1,18 +1,21 @@
 import Head from 'next/head'
 import Avatar from '@components/Avatar'
 import IntroText from '@components/IntroText'
+import Menu from '@components/Menu'
 
 const Home = () => (
   // HOMEPAGE
   <div className="container">
     <Head>
       <title>nocategory's portfolio</title>
-      <link rel="icon" href="/favicon.ico" /> // TODO: change the favicon
+      <link rel="icon" href="/favicon.ico" /> {/* TODO: change the favicon */}
     </Head>
 
     <main>
+      {/* TODO: add layout component to surround all this */}
       <Avatar />
       <IntroText />
+      <Menu activePage="home" />
     </main>
 
     <style jsx>{`
