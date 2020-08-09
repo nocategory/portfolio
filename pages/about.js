@@ -2,7 +2,7 @@ import Layout from '@components/Layout'
 import Menu from '@components/Menu'
 
 const About = () => (
-  <Layout bgColor="rgb(223, 224, 219)">
+  <Layout bgColor="#c6c5d4">
     <Menu activePage="about" />
   </Layout>
 )
