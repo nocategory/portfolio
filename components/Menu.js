@@ -1,10 +1,36 @@
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 const Menu = ({ activePage }) => {
   const menuItems = ['home', 'about', 'work', 'oss'] // TODO: Think better about these
 
+  const fadeMenu = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    exit: {
+      opacity: 0,
+      y: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.3,
+        type: 'tween',
+      },
+    },
+  }
+
   return (
-    <div className="menu-wrapper">
+    <motion.div
+      className="menu-wrapper"
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      variants={fadeMenu}
+    >
       <ul>
         {menuItems.map((item) => {
           return (
@@ -48,17 +74,8 @@ const Menu = ({ activePage }) => {
           text-decoration: none;
           border-radius: 0.5rem;
         }
-
-        .menu-wrapper {
-          background-color: rgba(255, 255, 255, 0.03);
-          color: rgba(255, 255, 255, 0.8);
-          padding: 0 2rem;
-          border-radius: 2rem;
-          position: fixed;
-          bottom: 2rem;
-        }
       `}</style>
-    </div>
+    </motion.div>
   )
 }
 
