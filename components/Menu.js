@@ -8,14 +8,9 @@ const Menu = ({ activePage }) => {
       <ul>
         {menuItems.map((item) => {
           return (
-            <li>
+            <li key={item}>
               <Link href={item !== 'home' ? `/${item}` : '/'}>
-                <a
-                  className={activePage === item ? 'active' : ''}
-                  onClick={() => setActiveItem(item)}
-                >
-                  {item}
-                </a>
+                <a className={activePage === item ? 'active' : ''}>{item}</a>
               </Link>
             </li>
           )
