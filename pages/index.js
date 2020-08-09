@@ -5,7 +5,7 @@ import Menu from '@components/Menu'
 
 const Home = () => (
   // HOMEPAGE
-  <Layout>
+  <Layout bgColor="#201f24">
     <Avatar />
     <IntroText />
     <Menu activePage="home" />

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-const Layout = ({ children }) => (
+const Layout = ({ children, bgColor }) => (
   <div className="container">
     <Head>
       <title>nocategory's portfolio</title>
@@ -15,7 +15,7 @@ const Layout = ({ children }) => (
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #201f24;
+        background-color: ${bgColor};
       }
 
       main {
