@@ -10,9 +10,20 @@
 }
 
 .container {
-  height: 100vh;
+  min-height: -webkit-fill-available;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.social-wrapper svg {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #201f24;
+}
+
+.social-wrapper svg:hover {
+  opacity: 0.3;
 }
