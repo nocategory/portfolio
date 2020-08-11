@@ -1,8 +1,18 @@
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
 
-const Menu = ({ activePage }) => {
-  const menuItems = ['home', 'about', 'work', 'oss'] // TODO: Think better about these
+const Menu = () => {
+  const [activePage, setActivePage] = useState(null)
+  const menuItems = ['home', 'about', 'work', 'oss']
+  const router = useRouter()
+
+  useEffect(() => {
+    setActivePage(
+      router.pathname.length > 1 ? router.pathname.split('/').join('') : 'home'
+    )
+  }, []) // [] => execute only at mount time
 
   const fadeMenu = {
     initial: {
@@ -15,7 +25,7 @@ const Menu = ({ activePage }) => {
     },
     animate: {
       y: 0,
-      opacity: 1,
+      opacity: 0.8,
       transition: {
         duration: 0.3,
         type: 'tween',

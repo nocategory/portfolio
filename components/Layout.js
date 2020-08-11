@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { motion } from 'framer-motion'
+import Menu from '@components/Menu'
 
 const fadeMenu = {
   initial: {
@@ -32,6 +33,7 @@ const Layout = ({ children, bgColor, theme }) => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
     <main>{children}</main>
+    <Menu />
 
     <style jsx>{`
       main {

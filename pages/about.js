@@ -1,10 +1,9 @@
 import Layout from '@components/Layout'
-import Menu from '@components/Menu'
 import { GitHub, Twitter, Linkedin } from 'react-feather'
 
 const About = () => (
   <Layout bgColor="#e8e8e8" theme="light">
-    <div className="info-wrapper">
+    <div className="text-area">
       <h1 style={{ fontSize: '3rem', margin: 0, fontWeight: 300 }}>
         {'{'} about me {'}'}
       </h1>
@@ -12,9 +11,9 @@ const About = () => (
         <b>Howdy mates!</b> My name is João and I'm an avid lover of just
         programming in general, with a special focus on the Web front-end side,
         having worked previously as a Junior Software Developer. Recently I've
-        been focusing on better understanding how React works under the hood and
-        better practices to improve on my already existing knowledge of it with
-        the help of some courses such as Cassidy's{' '}
+        been focusing on better understanding how <b>React</b> works under the
+        hood and better practices to improve on my already existing knowledge of
+        it with the help of some courses such as Cassidy's{' '}
         <a href="https://scrimba.com/course/greusablereact/" target="_blank">
           amazing advanced tutorial
         </a>{' '}
@@ -58,22 +57,21 @@ const About = () => (
         </a>
       </div>
     </div>
-    <Menu activePage="about" />
     <style jsx>{`
       p {
         font-size: 1.3rem;
       }
-      .info-wrapper {
+      .text-area {
         max-width: 60%;
         margin-bottom: 100px; /** kinda hacky but works */
       }
       @media only screen and (max-width: 1270px) {
-        .info-wrapper {
+        .text-area {
           max-width: 80%;
         }
       }
       @media only screen and (max-width: 920px) {
-        .info-wrapper {
+        .text-area {
           max-width: 95%;
         }
         p {
