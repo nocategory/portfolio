@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
+import { light, dark } from '@components/constants'
 
 const Menu = () => {
   const [activePage, setActivePage] = useState(null)
@@ -66,21 +67,25 @@ const Menu = () => {
         }
 
         ul li a {
-          color: rgba(255, 255, 255, 0.8);
+          color: ${light};
+          opacity: 0.8;
           text-decoration: none;
           padding: 0.7rem;
           margin: 0 0.2rem; /** keeps a small space between active & hovered a's */
+          transition: 0.3s linear;
         }
 
         ul li a:hover {
           background-color: #201f24;
-          color: rgba(255, 255, 255, 0.8);
+          color: ${light};
+          opacity: 0.8;
+          transition: 0.3s linear;
           text-decoration: none;
           border-radius: 0.5rem;
         }
 
         .active {
-          background-color: #201f24;
+          background-color: ${dark};
           text-decoration: none;
           border-radius: 0.5rem;
         }

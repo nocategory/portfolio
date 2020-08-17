@@ -1,4 +1,4 @@
-const IntroText = ({ fontSize, children }) => (
+const IntroText = ({ fontSize = '2rem', children }) => (
   <>
     <p style={{ fontSize, margin: 0 }}>
       {'{'} {children} {'}'}
@@ -6,8 +6,7 @@ const IntroText = ({ fontSize, children }) => (
 
     <style jsx>{`
       p {
-        font-size: 2rem;
-        font-weight: 300;
+        font-weight: 200;
       }
     `}</style>
   </>

@@ -19,7 +19,9 @@ const fadeMenu = {
   },
 }
 
-const Layout = ({ children, bgColor, theme }) => (
+const Layout = (
+  { children, bgColor, theme } // TODO: maybe rework not needing bgColor, not sure yet
+) => (
   <motion.div
     className="container"
     style={{ backgroundColor: bgColor }}
