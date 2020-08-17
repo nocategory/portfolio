@@ -1,13 +1,12 @@
 import Layout from '@components/Layout'
 import { GitHub, Twitter, Linkedin } from 'react-feather'
+import BracesText from '@components/BracesText'
 import { dark, light } from '@components/constants'
 
 const About = () => (
   <Layout bgColor={light} theme="light">
     <div className="text-area">
-      <h1 style={{ fontSize: '3rem', margin: 0, fontWeight: 300 }}>
-        {'{'} about me {'}'}
-      </h1>
+      <BracesText fontSize="3rem">about me</BracesText>
       <p>
         <b>Howdy mates!</b> My name is João and I'm an avid lover of just
         programming in general, with a special focus on the Web front-end side,
@@ -71,12 +70,12 @@ const About = () => (
           max-width: 80%;
         }
       }
-      @media only screen and (max-width: 920px) {
+      @media only screen and (max-width: 600px) {
         .text-area {
           max-width: 95%;
         }
         p {
-          font-size: 1.1rem;
+          font-size: 1.2rem;
         }
       }
     `}</style>
