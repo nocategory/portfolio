@@ -1,3 +1,5 @@
+import { dark } from '@components/constants'
+
 const Avatar = () => (
   <>
     <svg>
@@ -146,12 +148,13 @@ c-10 -11 -36 -45 -58 -73 -46 -61 -79 -86 -103 -77 -34 13 -12 62 68 150 25
 
     <style jsx>{`
       svg {
-        background: rgba(255, 255, 255, 0.8);
+        background: #fff;
+        opacity: 0.8;
         width: 400px;
         height: 400px;
       }
       svg g {
-        fill: #201f24;
+        fill: ${dark};
       }
     `}</style>
   </>

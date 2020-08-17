@@ -1,8 +1,9 @@
 import Layout from '@components/Layout'
 import { GitHub, Twitter, Linkedin } from 'react-feather'
+import { dark, light } from '@components/constants'
 
 const About = () => (
-  <Layout bgColor="#e8e8e8" theme="light">
+  <Layout bgColor={light} theme="light">
     <div className="text-area">
       <h1 style={{ fontSize: '3rem', margin: 0, fontWeight: 300 }}>
         {'{'} about me {'}'}

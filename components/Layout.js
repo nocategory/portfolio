@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { motion } from 'framer-motion'
 import Menu from '@components/Menu'
+import { dark, light } from '@components/constants'
 
 const fadeMenu = {
   initial: {
@@ -42,13 +43,14 @@ const Layout = ({ children, bgColor, theme }) => (
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 0 auto;
       }
     `}</style>
 
     <style jsx global>{`
       html,
       body {
-        color: ${theme === 'dark' ? '#dadada' : '#201f24'};
+        color: ${theme === 'dark' ? light : dark};
         background-color: ${bgColor};
         padding: 0;
         margin: 0;
