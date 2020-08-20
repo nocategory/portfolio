@@ -16,9 +16,7 @@
   min-height: -webkit-fill-available;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .social-wrapper svg {
@@ -29,4 +27,12 @@
 
 .social-wrapper svg:hover {
   opacity: 0.3;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }

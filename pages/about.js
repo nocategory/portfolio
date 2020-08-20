@@ -1,7 +1,7 @@
 import Layout from '@components/Layout'
 import { GitHub, Twitter, Linkedin } from 'react-feather'
 import BracesText from '@components/BracesText'
-import { dark, light } from '@components/constants'
+import { light } from '@components/constants'
 
 const About = () => (
   <Layout bgColor={light} theme="light">
