@@ -20,18 +20,19 @@ const About = () => (
         on reusable React.
       </p>
       <p>
-        I've also been looking into mobile development in general more and more
-        due to how big the mobile landscape is nowadays, and this is in my
-        opinion one of the most precious qualities in this industry: the will to
-        learn & change, the curiosity, the 🔥 <b>inside your soul</b>!
+        I've also been looking into mobile development more and more due to how
+        big the mobile landscape is nowadays, and these are in my opinion some
+        of the most precious qualities in this industry: the will to learn &
+        change, the curiosity, the 🔥 <b>inside your soul</b>!
       </p>
       <p>
-        Now in a more calm note, I believe this above is one of my biggest
+        Now in a more calm note, I believe the above are some of my biggest
         qualities, together with the fact that I'm quite a fast learner to a
         point where you can just give me the documentation link to some
         framework I've never worked with, tell me to do something with it and
         I'll get it done <strike>in less than 10 minutes</strike>, maybe not
-        with the highest standards from having worked with it for weeks but...{' '}
+        with the best practices (that I try to always achieve) from having
+        worked with it for weeks but...{' '}
         <i>damn, Google & StackOverflow are amazing</i>.
       </p>
       <p>
