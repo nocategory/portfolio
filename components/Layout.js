@@ -5,15 +5,15 @@ import { dark, light } from '@components/constants'
 
 const fadeMenu = {
   initial: {
-    opacity: 0.8,
+    opacity: 0.3,
   },
   exit: {
-    opacity: 0.8,
+    opacity: 0,
   },
   animate: {
     opacity: 1,
     transition: {
-      duration: 0.3,
+      duration: 0.5,
       type: 'tween',
     },
   },
