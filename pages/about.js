@@ -8,12 +8,12 @@ const About = () => (
     <div className="text-area">
       <BracesText fontSize="3rem">about me</BracesText>
       <p>
-        <b>Howdy mates!</b> My name is João and I'm an avid lover of just
-        programming in general, with a special focus on the Web front-end side,
-        having worked previously as a Junior Software Developer. Recently I've
-        been focusing on better understanding how <b>React</b> works under the
-        hood and better practices to improve on my already existing knowledge of
-        it with the help of some courses such as Cassidy's{' '}
+        <b>Howdy mates!</b> My name is João and I'm an avid lover of programming
+        in general, with a special focus on the Web front-end side, having
+        previously worked as a Junior Software Developer. Recently I've been
+        focusing on better understanding how <b>React</b> works under the hood
+        and better practices to improve on my already existing knowledge of it
+        with the help of some courses such as Cassidy's{' '}
         <a href="https://scrimba.com/course/greusablereact/" target="_blank">
           amazing advanced tutorial
         </a>{' '}
@@ -27,13 +27,15 @@ const About = () => (
       </p>
       <p>
         Now in a more calm note, I believe the above are some of my biggest
-        qualities, together with the fact that I'm quite a fast learner to a
-        point where you can just give me the documentation link to some
-        framework I've never worked with, tell me to do something with it and
+        qualities, together with the fact that I'm quite a <b>fast learner</b>{' '}
+        to a point where you can just give me the documentation link to
+        something I've never worked with, tell me to do something with it and
         I'll get it done <strike>in less than 10 minutes</strike>, maybe not
-        with the best practices (that I try to always achieve) from having
-        worked with it for weeks but...{' '}
-        <i>damn, Google & StackOverflow are amazing</i>.
+        with the <b>best practices (that I try to always achieve)</b> but...{' '}
+        <i>
+          <b>I know how to Google</b>
+        </i>
+        .
       </p>
       <p>
         You can check me out on the platforms below & email me at{' '}
@@ -50,11 +52,11 @@ const About = () => (
         <a href="https://github.com/nocategory" target="_blank">
           <GitHub size={36} />
         </a>
-        <a href="https://twitter.com/_nocategory" target="_blank">
-          <Twitter size={36} />
-        </a>
         <a href="https://www.linkedin.com/in/jfilsalgueiro/" target="_blank">
           <Linkedin size={36} />
+        </a>
+        <a href="https://twitter.com/_nocategory" target="_blank">
+          <Twitter size={36} />
         </a>
       </div>
     </div>
