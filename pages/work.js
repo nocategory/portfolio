@@ -19,7 +19,7 @@ const Work = ({ workData }) => {
     <Layout bgColor={light} theme="light">
       <div className="row">
         <div className="sidebar">
-          <div style={{ position: 'fixed' }}>
+          <div className="sidebar-content">
             <BracesText fontSize="3rem">work</BracesText>
             <nav>
               <ul>
@@ -66,13 +66,15 @@ const Work = ({ workData }) => {
           justify-content: space-between;
           padding: 5rem 2rem;
         }
-
         .sidebar {
           flex: 1;
           flex-direction: column;
           display: flex;
           align-items: center;
           text-align: center;
+        }
+        .sidebar-content {
+          position: fixed;
         }
         .desc {
           flex: 2.5;
@@ -94,6 +96,15 @@ const Work = ({ workData }) => {
         nav ul li a.active {
           color: ${blue};
           opacity: 1;
+        }
+
+        @media only screen and (max-width: 1000px) {
+          .row {
+            flex-direction: column;
+          }
+          .sidebar-content {
+            position: relative;
+          }
         }
       `}</style>
     </Layout>
