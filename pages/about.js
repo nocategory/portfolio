@@ -1,10 +1,5 @@
 import Layout from '@components/Layout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faGithub,
-  faTwitter,
-  faLinkedin,
-} from '@fortawesome/free-brands-svg-icons'
 import BracesText from '@components/BracesText'
 import { light } from '@components/constants'
 
@@ -55,13 +50,13 @@ const About = () => (
         }}
       >
         <a href="https://github.com/nocategory" target="_blank">
-          <FontAwesomeIcon icon={faGithub} size="3x" />
+          <FontAwesomeIcon icon={['fab', 'github']} size="3x" />
         </a>
         <a href="https://www.linkedin.com/in/jfilsalgueiro/" target="_blank">
-          <FontAwesomeIcon icon={faLinkedin} size="3x" />
+          <FontAwesomeIcon icon={['fab', 'linkedin']} size="3x" />
         </a>
         <a href="https://twitter.com/_nocategory" target="_blank">
-          <FontAwesomeIcon icon={faTwitter} size="3x" />
+          <FontAwesomeIcon icon={['fab', 'twitter']} size="3x" />
         </a>
       </div>
     </div>
