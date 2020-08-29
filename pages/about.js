@@ -1,5 +1,10 @@
 import Layout from '@components/Layout'
-import { GitHub, Twitter, Linkedin } from 'react-feather'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faGithub,
+  faTwitter,
+  faLinkedin,
+} from '@fortawesome/free-brands-svg-icons'
 import BracesText from '@components/BracesText'
 import { light } from '@components/constants'
 
@@ -44,19 +49,19 @@ const About = () => (
       <div
         className="social-wrapper"
         style={{
-          display: 'flex',
           flexDirection: 'row',
           justifyContent: 'center',
+          textAlign: 'center',
         }}
       >
         <a href="https://github.com/nocategory" target="_blank">
-          <GitHub size={36} />
+          <FontAwesomeIcon icon={faGithub} size="3x" />
         </a>
         <a href="https://www.linkedin.com/in/jfilsalgueiro/" target="_blank">
-          <Linkedin size={36} />
+          <FontAwesomeIcon icon={faLinkedin} size="3x" />
         </a>
         <a href="https://twitter.com/_nocategory" target="_blank">
-          <Twitter size={36} />
+          <FontAwesomeIcon icon={faTwitter} size="3x" />
         </a>
       </div>
     </div>
@@ -66,7 +71,6 @@ const About = () => (
       }
       .text-area {
         max-width: 60%;
-        margin-bottom: 100px; /** kinda hacky but works */
       }
       @media only screen and (max-width: 1270px) {
         .text-area {

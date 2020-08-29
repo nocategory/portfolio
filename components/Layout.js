@@ -46,6 +46,7 @@ const Layout = (
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        margin-bottom: 150px;
       }
     `}</style>
 
