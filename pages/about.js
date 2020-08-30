@@ -47,6 +47,7 @@ const About = () => (
           flexDirection: 'row',
           justifyContent: 'center',
           textAlign: 'center',
+          marginBottom: '8rem',
         }}
       >
         <a href="https://github.com/nocategory" target="_blank">
