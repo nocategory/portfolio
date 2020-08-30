@@ -19,5 +19,31 @@
       "desc": "This is a really small Ruby on Rails app made for a Software Engineer interview. It uses GitHub's API v3 to pull data from users, such as followers, public repositories, etc. The focus of this project was on the back-end Rails system."
     }
   ],
-  "certificates": [{}]
+  "certificates": [
+    {
+      "name": "The React Bootcamp",
+      "icon": "react",
+      "link": "https://scrimba.com/certificate/uQmdzGhW/greact",
+      "bgColor": "#537ad8"
+    },
+    {
+      "name": "Building Reusable React",
+      "icon": "react",
+      "link": "https://scrimba.com/certificate/uQmdzGhW/greusablereact",
+      "bgColor": "#537ad8"
+    },
+    {
+      "name": "Flutter Development Bootcamp",
+      "prefix": "fas",
+      "icon": "mobile",
+      "link": "/flutter_certificate.pdf",
+      "bgColor": "#d8af53"
+    },
+    {
+      "name": "LPI Linux Essentials",
+      "icon": "linux",
+      "link": "https://linuxacademy.com/profile/u/cert/id/107514",
+      "bgColor": "#404040"
+    }
+  ]
 }

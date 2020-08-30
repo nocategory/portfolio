@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import Layout from '@components/Layout'
 import BracesText from '@components/BracesText'
 import Project from '@components/Project'
+import Certificate from '@components/Certificate'
 import { light, blue } from '@components/constants'
 import useScrollSpy from '@hooks/useScrollSpy'
 import fs from 'fs'
@@ -12,7 +13,7 @@ const Work = ({ workData }) => {
 
   const activeSection = useScrollSpy({
     sectionElementRefs: sectionRefs,
-    offsetPx: -80,
+    offsetPx: -200,
   })
 
   return (
@@ -32,7 +33,12 @@ const Work = ({ workData }) => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">certificates</a>
+                  <a
+                    href="#certificates"
+                    className={activeSection === 1 ? 'active' : ''}
+                  >
+                    certificates
+                  </a>
                 </li>
                 <li>
                   <a href="/oss">open-source</a>
@@ -41,14 +47,33 @@ const Work = ({ workData }) => {
             </nav>
           </div>
         </div>
-        <div className="half-page desc" style={{}}>
+        <div className="half-page desc">
           <div className="projects" id="projects" ref={sectionRefs[0]}>
             {workData.projects.map((data) => (
               <Project
+                key={data.name}
                 name={data.name}
                 link={data.link}
                 image={data.image}
                 desc={data.desc}
+              />
+            ))}
+          </div>
+          <div
+            className="certificates"
+            id="certificates"
+            ref={sectionRefs[1]}
+            style={{ padding: '100px' }}
+          >
+            <h1 style={{ textAlign: 'center' }}>Certificates</h1>
+            {workData.certificates.map((data) => (
+              <Certificate
+                key={data.name}
+                name={data.name}
+                icon={data.icon}
+                link={data.link}
+                prefix={data.prefix}
+                bgColor={data.bgColor}
               />
             ))}
           </div>
@@ -72,6 +97,7 @@ const Work = ({ workData }) => {
           display: flex;
           align-items: center;
           text-align: center;
+          border-right: 2px dotted rgb(84 84 84 / 15%);
         }
         .sidebar-content {
           position: fixed;
@@ -79,6 +105,7 @@ const Work = ({ workData }) => {
         .desc {
           flex: 2.5;
           align-items: center;
+          flex-direction: column;
         }
         nav ul {
           padding-left: 0;
@@ -105,6 +132,10 @@ const Work = ({ workData }) => {
           .sidebar-content {
             position: relative;
           }
+          .sidebar {
+            border-bottom: 2px dotted rgb(84 84 84 / 15%);
+            border-right: none;
+          }
         }
       `}</style>
     </Layout>
@@ -114,6 +145,7 @@ const Work = ({ workData }) => {
 export async function getStaticProps() {
   const dataPath = path.join(process.cwd(), 'components/work_data.json')
   const workData = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
+  console.log(workData.certificates)
   return {
     props: { workData }, // will be passed to the page component as props
   }
