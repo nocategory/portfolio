@@ -63,7 +63,7 @@ const Work = ({ workData }) => {
             className="certificates"
             id="certificates"
             ref={sectionRefs[1]}
-            style={{ padding: '100px' }}
+            style={{ marginTop: '100px' }}
           >
             <h1 style={{ textAlign: 'center' }}>Certificates</h1>
             {workData.certificates.map((data) => (
