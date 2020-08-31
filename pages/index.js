@@ -7,7 +7,7 @@ const Home = () => (
   // HOMEPAGE
   <Layout bgColor={dark} theme="dark">
     <Avatar />
-    <BracesText fontSize="2rem">
+    <BracesText>
       <b>nocategory</b>'s portfolio
     </BracesText>
   </Layout>

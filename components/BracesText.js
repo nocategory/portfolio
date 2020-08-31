@@ -1,4 +1,4 @@
-const IntroText = ({ fontSize = '2rem', children }) => (
+const BracesText = ({ fontSize = '2rem', children }) => (
   <>
     <p style={{ fontSize, margin: 0 }}>
       {'{'} {children} {'}'}
@@ -12,4 +12,4 @@ const IntroText = ({ fontSize = '2rem', children }) => (
   </>
 )
 
-export default IntroText
+export default BracesText
