@@ -35,7 +35,7 @@ const About = () => (
         <i>
           <b>I know how to Google</b>
         </i>
-        .
+        . Which, in my opinion, is a veeeery important skill
       </p>
       <p>
         You can check me out on the platforms below & email me at{' '}
