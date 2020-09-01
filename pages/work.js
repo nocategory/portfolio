@@ -13,7 +13,7 @@ const Work = ({ workData }) => {
 
   const activeSection = useScrollSpy({
     sectionElementRefs: sectionRefs,
-    offsetPx: -200,
+    offsetPx: -400,
   })
 
   return (
@@ -63,7 +63,7 @@ const Work = ({ workData }) => {
             className="certificates"
             id="certificates"
             ref={sectionRefs[1]}
-            style={{ marginTop: '100px' }}
+            style={{ margin: '10rem 0' }}
           >
             <h1 style={{ textAlign: 'center' }}>Certificates</h1>
             {workData.certificates.map((data) => (
@@ -143,9 +143,8 @@ const Work = ({ workData }) => {
 }
 
 export async function getStaticProps() {
-  const dataPath = path.join(process.cwd(), 'components/work_data.json')
+  const dataPath = path.join(process.cwd(), 'public/work_data.json')
   const workData = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
-  console.log(workData.certificates)
   return {
     props: { workData }, // will be passed to the page component as props
   }
