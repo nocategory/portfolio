@@ -9,7 +9,7 @@ import fs from 'fs'
 import path from 'path'
 
 const Work = ({ workData }) => {
-  const sectionRefs = [useRef(null), useRef(null), useRef(null), useRef(null)]
+  const sectionRefs = [useRef(null), useRef(null)]
 
   const activeSection = useScrollSpy({
     sectionElementRefs: sectionRefs,
