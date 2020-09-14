@@ -8,9 +8,9 @@
     },
     {
       "name": "APOP",
-      "link": "https://web.archive.org/web/20180216201959/http://www.apop.pt/",
+      "link": "http://www.apop.pt/",
       "image": "/apop.svg",
-      "desc": "APOP is the Portuguese Association of Professional Organizers, founded in March 2017, with the objective of sharing the idea of professional organizers as a profession. This project consisted on the idealization of the clients ideas and the implementation of a custom PHP CMS. The website appears to be down."
+      "desc": "APOP is the Portuguese Association of Professional Organizers, founded in March 2017, with the objective of sharing the idea of professional organizers as a profession. This project consisted on the idealization of the clients ideas UI wise and the implementation of a custom PHP CMS."
     },
     {
       "name": "GitHub User Info",
