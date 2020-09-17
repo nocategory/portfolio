@@ -1,4 +1,5 @@
 import { blue } from '@components/constants'
+import Image from '@components/Image'
 
 const Project = ({ name, link, image, desc }) => {
   return (
@@ -7,7 +8,7 @@ const Project = ({ name, link, image, desc }) => {
       <a href={link} className="project-link" target="_blank">
         {link.includes('github.com') ? 'View repo' : 'View website'}
       </a>
-      <img src={image} />
+      <Image src={image} />
       <p>{desc}</p>
       <style jsx>{`
         .project {
