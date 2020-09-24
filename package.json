@@ -13,7 +13,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
-    "framer-motion": "^2.3.0",
+    "framer-motion": "^2.6.5",
     "fs": "^0.0.1-security",
     "graphql": "^15.3.0",
     "graphql-request": "^3.0.0",
