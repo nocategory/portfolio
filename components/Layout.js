@@ -19,9 +19,7 @@ const fadeMenu = {
   },
 }
 
-const Layout = (
-  { children, bgColor, theme } // TODO: maybe rework not needing bgColor, not sure yet
-) => (
+const Layout = ({ children, bgColor, theme }) => (
   <motion.div
     className="container"
     style={{ backgroundColor: bgColor }}
@@ -32,7 +30,7 @@ const Layout = (
   >
     <Head>
       <title>nocategory's portfolio</title>
-      <link rel="icon" href="/favicon.ico" /> {/* TODO: change the favicon */}
+      <link rel="icon" href="/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
     <main>{children}</main>
