@@ -6,6 +6,7 @@ module.exports = withPlugins([
   [
     optimizedImages,
     {
+      target: 'serverless',
       webpack(config) {
         config.resolve.alias.images = path.join(__dirname, 'images')
         return config
