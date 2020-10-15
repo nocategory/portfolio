@@ -10,9 +10,11 @@ const ossQuery = gql`
   {
     viewer {
       repositoriesContributedTo(
-        first: 100
+        first: 10
         contributionTypes: [COMMIT, ISSUE, PULL_REQUEST, REPOSITORY]
         orderBy: { field: UPDATED_AT, direction: DESC }
+        includeUserRepositories: true
+        privacy: PUBLIC
       ) {
         nodes {
           nameWithOwner
