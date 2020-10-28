@@ -1,6 +1,7 @@
 {
   "name": "nocategory-portfolio",
   "version": "0.1.1",
+  "license": "MIT",
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -17,7 +18,7 @@
     "graphql-request": "^3.0.0",
     "i": "^0.3.6",
     "lqip-loader": "^2.2.1",
-    "next": "9.5.5",
+    "next": "10.0.0",
     "next-compose-plugins": "^2.2.0",
     "next-on-netlify": "^2.5.1",
     "next-optimized-images": "^2.6.2",
