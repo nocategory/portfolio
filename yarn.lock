@@ -7003,25 +7003,19 @@ neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-next-aws-lambda@^2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/next-aws-lambda/-/next-aws-lambda-2.5.0.tgz#66067ca3a59524e87579cfc5c19cad17eba1329e"
-  integrity sha512-TKI0e+RFOuevQnkliE73VCzx9VRF8qpXuL18uxOJvPhCe09pxLwfaDQMuNKf3b2d9PS/Ajn+Y/O41bBuJMu4aA==
-
 next-compose-plugins@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/next-compose-plugins/-/next-compose-plugins-2.2.0.tgz#95cd8eb40ab0652070d76572fb648354191628b0"
   integrity sha512-ChUlpT9tWfJ7YxqGw/WQ2T1gf8EeX93n1XqeQw0lkvGa7seszahvF4eOZUJoq7Hetsbzg4UHVnPoCXfXTyQR3g==
 
-next-on-netlify@^2.5.1:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/next-on-netlify/-/next-on-netlify-2.5.1.tgz#19d6b8e21be670b5a0a89f8abb0f31ffd605972e"
-  integrity sha512-TwQTy7xNg0CTfnVE4B6oRu2+6ci0kSsW9sD16uzBIKXjLY3YalutMrQgYyL/WsKA0YXQF7VS2aVwN0E70cO76g==
+next-on-netlify@^2.6.0:
+  version "2.6.3"
+  resolved "https://registry.yarnpkg.com/next-on-netlify/-/next-on-netlify-2.6.3.tgz#a6e24b5c0504ce2c85e7e59d909b9e4816936df8"
+  integrity sha512-5ZEjlEH9ZeWDtbFIgxYLqNywCcssJMKV8WCCk1CC8so9Umlv1mZeUA5MoiMOENOE5mkZJNMLTG+nmL8+tQPQGQ==
   dependencies:
     "@sls-next/lambda-at-edge" "^1.5.2"
     commander "^6.0.0"
     fs-extra "^9.0.1"
-    next-aws-lambda "^2.5.0"
 
 next-optimized-images@^2.6.2:
   version "2.6.2"
