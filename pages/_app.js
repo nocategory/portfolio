@@ -9,7 +9,11 @@ import {
   faReact,
   faLinux,
 } from '@fortawesome/free-brands-svg-icons'
-import { faMobile, faCodeBranch } from '@fortawesome/free-solid-svg-icons'
+import {
+  faMobile,
+  faCodeBranch,
+  faBars,
+} from '@fortawesome/free-solid-svg-icons'
 
 // seems to be needed for styles to be applied with react-fontawesome
 // https://github.com/FortAwesome/react-fontawesome/issues/134#issuecomment-421580721
@@ -25,7 +29,8 @@ library.add(
   faReact,
   faMobile,
   faLinux,
-  faCodeBranch
+  faCodeBranch,
+  faBars
 )
 
 class MyApp extends App {

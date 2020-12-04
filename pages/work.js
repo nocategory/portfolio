@@ -90,6 +90,7 @@ const Work = ({ workData }) => {
           flex-direction: row;
           justify-content: space-between;
           padding: 5rem 2rem;
+          overflow: hidden;
         }
         .sidebar {
           flex: 1;

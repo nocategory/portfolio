@@ -1,14 +1,15 @@
 /** need to have some of the css here because of the animations with framer-motion  */
-.menu-wrapper {
-  background-color: #111013;
-  color: rgb(255, 255, 255);
-  backdrop-filter: blur(8px);
-  max-width: 100%;
-  bottom: 0;
-  padding: 0 2rem;
-  border-radius: 2rem;
+/** https://github.com/framer/motion/issues/231 looks like there's no solution? */
+.menu {
   position: fixed;
-  bottom: 2rem;
+  bottom: 1rem;
+  width: 300px;
+  min-height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
 }
 
 .container {
