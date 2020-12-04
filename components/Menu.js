@@ -63,6 +63,7 @@ const Menu = ({ bgColor }) => {
       className="menu"
       initial={false}
       onClick={() => toggleOpen()}
+      whileHover={{ scale: 1.1 }}
       variants={menu}
       animate={isOpen ? 'open' : 'closed'}
       style={{ backgroundColor: bgColor === dark ? light : dark }}
