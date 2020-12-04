@@ -90,7 +90,7 @@ const OSS = ({ data }) => {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const data = await fetcher(ossQuery)
   return { props: { data } }
 }
