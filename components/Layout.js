@@ -34,7 +34,7 @@ const Layout = ({ children, bgColor, theme }) => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
     <main>{children}</main>
-    <Menu />
+    <Menu bgColor={bgColor} />
 
     <style jsx>{`
       main {
@@ -44,6 +44,11 @@ const Layout = ({ children, bgColor, theme }) => (
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+      }
+      @media only screen and (max-width: 600px) {
+        main {
+          justify-content: flex-start;
+        }
       }
     `}</style>
 
@@ -58,6 +63,7 @@ const Layout = ({ children, bgColor, theme }) => (
           Helvetica, Arial, sans-serif, Ubuntu, 'Apple Color Emoji',
           'Segoe UI Emoji', 'Segoe UI Symbol';
         line-height: 1.5;
+        height: 100vh;
       }
 
       * {
