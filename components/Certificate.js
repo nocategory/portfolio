@@ -1,4 +1,4 @@
-import { light, dark } from '@components/constants'
+import { light } from '@components/constants'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Certificate = ({ name, icon, prefix, link, bgColor }) => {

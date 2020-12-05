@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { motion, useCycle } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { light, blue, dark, hoverLight } from '@components/constants'
+import { light, dark } from '@components/constants'
 
 const Menu = ({ bgColor }) => {
   const [isOpen, toggleOpen] = useCycle(false, true)
