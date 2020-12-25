@@ -43,7 +43,7 @@ const OSS = ({ data }) => {
   return (
     <Layout bgColor={dark} theme="dark">
       <BracesText fontSize="3rem">oss contributions</BracesText>
-      <span style={{ opacity: 0.3 }}>( just soooome of them )</span>
+      <span style={{ opacity: 0.3 }}>*just the most recent ones*</span>
       <div className="list-repos">
         {ossProjects.map((repo) => (
           <Repos repo={repo} key={repo.nameWithOwner} />
