@@ -1,5 +1,5 @@
 import { blue } from '@components/constants'
-import Image from '@components/Image'
+import Img from '@components/Image'
 
 const Project = ({ name, type, link, image, desc }) => {
   return (
@@ -9,7 +9,7 @@ const Project = ({ name, type, link, image, desc }) => {
       <a href={link} className="project-link" target="_blank">
         {link.includes('github.com') ? 'View Repo' : 'View Site'}
       </a>
-      <Image src={image} />
+      <Img src={image} />
       <p>{desc}</p>
       <style jsx>{`
         .project {
@@ -25,7 +25,7 @@ const Project = ({ name, type, link, image, desc }) => {
           background-color: #fdfdfd;
         }
         .project:nth-child(even) {
-          background-color: #f7f7f7;
+          background-color: #f9f9f9;
         }
         .project p {
           opacity: 1;
