@@ -1,4 +1,4 @@
-const BracesText = ({ fontSize = '2rem', children }) => (
+const BracesText = ({ fontSize, children }) => (
   <>
     <p style={{ fontSize, margin: 0 }}>
       {'{'} {children} {'}'}

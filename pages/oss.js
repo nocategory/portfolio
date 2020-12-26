@@ -42,8 +42,10 @@ const OSS = ({ data }) => {
   const ossProjects = data.viewer.repositoriesContributedTo.nodes
   return (
     <Layout bgColor={dark} theme="dark">
-      <BracesText fontSize="3rem">oss contributions</BracesText>
-      <span style={{ opacity: 0.3 }}>*just the most recent ones*</span>
+      <div className="braces-text">
+        <BracesText>oss contributions</BracesText>
+      </div>
+      <span style={{ opacity: 0.3 }}>* just the most recent ones</span>
       <div className="list-repos">
         {ossProjects.map((repo) => (
           <Repos repo={repo} key={repo.nameWithOwner} />
@@ -82,8 +84,27 @@ const OSS = ({ data }) => {
         .github-check > a:hover {
           opacity: 1;
         }
+        .braces-text {
+          position: relative;
+          font-size: 3rem;
+        }
+        .braces-text:after {
+          content: '*';
+          color: #fff;
+          font-size: 2rem;
+          position: absolute;
+          right: -1rem;
+          top: 0;
+          opacity: 0.5;
+        }
         a {
           color: ${light};
+        }
+
+        @media only screen and (max-width: 500px) {
+          .braces-text {
+            font-size: 2.2rem;
+          }
         }
       `}</style>
     </Layout>
