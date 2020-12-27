@@ -68,8 +68,6 @@ const Layout = ({ children, bgColor, theme }) => (
     `}</style>
 
     <style jsx global>{`
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
       html,
       body {
         color: ${theme === 'dark' ? light : dark};
