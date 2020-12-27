@@ -1,32 +1,28 @@
-const Image = ({ src }) => {
+import Image from 'next/image'
+
+const Img = ({ src }) => {
   return (
     <div className="image-container">
-      <img className="background" src={require(`images/${src}?lqip`)} />
-      <img className="foreground" src={require(`images/${src}?webp`)} />
+      <Image
+        className="image"
+        src={`/images/${src}`}
+        layout="responsive"
+        width={1363}
+        height={967}
+        quality={85}
+      />
       <style jsx>{`
-        /* big thanks to https://stackoverflow.com/a/48877138 */
-        .background,
-        .foreground {
+        .image {
           box-sizing: border-box;
-          width: 100%;
           flex: none;
-        }
-        .foreground {
-          margin-left: -100%;
-          box-shadow: 0px 0px 10px 1px #4a4a4b;
+          max-width: 80%;
         }
         .image-container {
-          display: flex;
-          flex-flow: row nowrap;
-        }
-        img {
-          width: 100%;
-          border-radius: 0.5rem;
-          margin: 1rem 0;
+          width: 80%;
         }
       `}</style>
     </div>
   )
 }
 
-export default Image
+export default Img

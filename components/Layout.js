@@ -64,16 +64,19 @@ const Layout = ({ children, bgColor, theme }) => (
     `}</style>
 
     <style jsx global>{`
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
       html,
       body {
         color: ${theme === 'dark' ? light : dark};
         background-color: ${bgColor};
         padding: 0;
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-          Helvetica, Arial, sans-serif, Ubuntu, 'Apple Color Emoji',
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          Roboto, Helvetica, Arial, sans-serif, Ubuntu, 'Apple Color Emoji',
           'Segoe UI Emoji', 'Segoe UI Symbol';
-        line-height: 1.5;
+        line-height: 1.2;
+        letter-spacing: -0.011em;
         height: 100vh;
       }
 
