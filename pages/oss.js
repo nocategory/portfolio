@@ -43,7 +43,7 @@ const OSS = ({ data }) => {
   return (
     <Layout bgColor={dark} theme="dark">
       <div className="braces-text">
-        <BracesText>oss contributions</BracesText>
+        <BracesText fontSize="3rem">oss contributions</BracesText>
       </div>
       <span style={{ opacity: 0.3 }}>* just the most recent ones</span>
       <div className="list-repos">
@@ -86,7 +86,6 @@ const OSS = ({ data }) => {
         }
         .braces-text {
           position: relative;
-          font-size: 3rem;
         }
         .braces-text:after {
           content: '*';
@@ -99,12 +98,6 @@ const OSS = ({ data }) => {
         }
         a {
           color: ${light};
-        }
-
-        @media only screen and (max-width: 500px) {
-          .braces-text {
-            font-size: 2.2rem;
-          }
         }
       `}</style>
     </Layout>
