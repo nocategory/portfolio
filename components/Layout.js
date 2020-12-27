@@ -43,6 +43,10 @@ const Layout = ({ children, bgColor, theme }) => (
         href="/favicon-16x16.png"
       />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta
+        name="Description"
+        content="Web development portfolio of nocategory."
+      />
     </Head>
     <main>{children}</main>
     <Menu bgColor={bgColor} />
