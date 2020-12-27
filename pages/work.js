@@ -17,74 +17,33 @@ const Work = ({ workData }) => {
   })
 
   return (
-    <Layout bgColor={light} theme="light">
-      <div className="row">
-        <div className="sidebar">
-          <div className="sidebar-content">
-            <BracesText fontSize="3rem">work</BracesText>
-            <nav>
-              <ul>
-                <li>
-                  <a
-                    href="#projects"
-                    className={activeSection === 0 ? 'active' : ''}
-                  >
-                    projects
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#certificates"
-                    className={activeSection === 1 ? 'active' : ''}
-                  >
-                    certificates
-                  </a>
-                </li>
-                <li>
-                  <a href="/oss">open-source</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div className="half-page desc">
-          <div className="projects" id="projects" ref={sectionRefs[0]}>
-            {workData.projects.map((data) => (
-              <Project
-                key={data.name}
-                name={data.name}
-                link={data.link}
-                image={data.image}
-                desc={data.desc}
-              />
-            ))}
-          </div>
-          <div
-            className="certificates"
-            id="certificates"
-            ref={sectionRefs[1]}
-            style={{ margin: '10rem 0' }}
-          >
-            <h1 style={{ textAlign: 'center' }}>Certificates</h1>
-            {workData.certificates.map((data) => (
-              <Certificate
-                key={data.name}
-                name={data.name}
-                icon={data.icon}
-                link={data.link}
-                prefix={data.prefix}
-                bgColor={data.bgColor}
-              />
-            ))}
-          </div>
-        </div>
+    <Layout bgColor={'#fdfdfd'} theme="light">
+      <div className="projects" id="projects" ref={sectionRefs[0]}>
+        {workData.projects.map((data) => (
+          <Project
+            key={data.name}
+            name={data.name}
+            type={data.type}
+            link={data.link}
+            image={data.image}
+            desc={data.desc}
+          />
+        ))}
+      </div>
+      <div className="certificates" id="certificates" ref={sectionRefs[1]}>
+        <h1 style={{ textAlign: 'center' }}>Certificates</h1>
+        {workData.certificates.map((data) => (
+          <Certificate
+            key={data.name}
+            name={data.name}
+            icon={data.icon}
+            link={data.link}
+            prefix={data.prefix}
+            bgColor={data.bgColor}
+          />
+        ))}
       </div>
       <style jsx>{`
-        .half-page {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-        }
         .row {
           display: flex;
           flex-direction: row;
@@ -92,38 +51,11 @@ const Work = ({ workData }) => {
           padding: 5rem 2rem;
           overflow: hidden;
         }
-        .sidebar {
-          flex: 1;
-          flex-direction: column;
-          display: flex;
-          align-items: center;
-          text-align: center;
-          border-right: 2px dotted rgb(84 84 84 / 15%);
-        }
-        .sidebar-content {
-          position: fixed;
-        }
-        .desc {
-          flex: 2.5;
-          align-items: center;
-          flex-direction: column;
-        }
-        nav ul {
-          padding-left: 0;
-        }
-        nav ul li a {
-          color: black;
-          opacity: 0.5;
-          transition: 0.3s linear;
-        }
-        nav ul li a:hover {
-          opacity: 0.7;
-          color: ${blue};
-          transition: 0.3s linear;
-        }
-        nav ul li a.active {
-          color: ${blue};
-          opacity: 1;
+        .certificates {
+          max-width: 500px;
+          margin: 0 auto;
+          padding: 3rem;
+          background-color: #fdfdfd;
         }
 
         @media only screen and (max-width: 1000px) {

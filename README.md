@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://nocategory.dev/">
-    <img src="./public/screenshot.png" height="512px" />
+    <img src="./public/showcase.png" />
   </a>
   <br />
   <br />
