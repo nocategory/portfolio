@@ -86,6 +86,7 @@ const OSS = ({ data }) => {
         }
         .braces-text {
           position: relative;
+          padding: 2rem;
         }
         .braces-text:after {
           content: '*';
