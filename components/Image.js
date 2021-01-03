@@ -5,7 +5,7 @@ const Img = ({ src }) => {
     <div className="image-container">
       <Image
         className="image"
-        src={`/images/${src}`}
+        src={`v1609702289/portfolio/${src}`}
         layout="responsive"
         width={1363}
         height={967}
