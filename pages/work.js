@@ -1,25 +1,45 @@
 import React, { useRef } from 'react'
 import Layout from '@components/Layout'
-import BracesText from '@components/BracesText'
 import Project from '@components/Project'
 import Certificate from '@components/Certificate'
-import { light, blue } from '@components/constants'
-import useScrollSpy from '@hooks/useScrollSpy'
-import fs from 'fs'
-import path from 'path'
+import useSWR from 'swr'
+import { GraphQLClient, gql } from 'graphql-request'
 
-const Work = ({ workData }) => {
-  const sectionRefs = [useRef(null), useRef(null)]
+const query = gql`
+  {
+    projects {
+      name
+      type
+      link
+      image
+      desc
+    }
+    certificates {
+      bgColor
+      icon
+      link
+      name
+      prefix
+    }
+  }
+`
 
-  const activeSection = useScrollSpy({
-    sectionElementRefs: sectionRefs,
-    offsetPx: -400,
-  })
+const graphQLClient = new GraphQLClient(process.env.HASURA_URL, {
+  headers: {
+    'x-hasura-admin-secret': process.env.HASURA_SECRET,
+  },
+})
+
+const fetcher = (query) => graphQLClient.request(query)
+
+const Work = ({ serverData }) => {
+  const { data, error } = useSWR(query, fetcher, { initialData: serverData })
+  // if (error) return JSON.stringify(error) // TODO: change this to an error component
 
   return (
     <Layout bgColor={'#fdfdfd'} theme="light">
-      <div className="projects" id="projects" ref={sectionRefs[0]}>
-        {workData.projects.map((data) => (
+      <div className="projects" id="projects">
+        {data.projects.map((data) => (
           <Project
             key={data.name}
             name={data.name}
@@ -30,9 +50,9 @@ const Work = ({ workData }) => {
           />
         ))}
       </div>
-      <div className="certificates" id="certificates" ref={sectionRefs[1]}>
+      <div className="certificates" id="certificates">
         <h1 style={{ textAlign: 'center' }}>Certificates</h1>
-        {workData.certificates.map((data) => (
+        {data.certificates.map((data) => (
           <Certificate
             key={data.name}
             name={data.name}
@@ -76,11 +96,10 @@ const Work = ({ workData }) => {
 }
 
 export async function getStaticProps() {
-  const dataPath = path.join(process.cwd(), 'public/work_data.json')
-  const workData = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
-  return {
-    props: { workData }, // will be passed to the page component as props
-  }
+  // `getStaticProps` is invoked on the server-side,
+  // so this `fetcher` function will be executed on the server-side.
+  const serverData = await fetcher(query)
+  return { props: { serverData } }
 }
 
 export default Work
