@@ -86,14 +86,14 @@ const OSS = ({ data }) => {
         }
         .braces-text {
           position: relative;
-          padding: 2rem;
+          padding: 1rem;
         }
         .braces-text:after {
           content: '*';
           color: #fff;
           font-size: 2rem;
           position: absolute;
-          right: -1rem;
+          right: 0;
           top: 0;
           opacity: 0.5;
         }
