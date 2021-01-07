@@ -14,8 +14,7 @@ const Certificate = ({ name, icon, prefix, link, bgColor }) => {
         <style jsx>{`
           .certificate {
             padding: 1rem 2rem;
-            margin: 2rem;
-            text-align: left;
+            margin: 0.5rem;
             color: ${light};
             background-color: ${bgColor};
             border-radius: 0.6rem;
@@ -27,7 +26,7 @@ const Certificate = ({ name, icon, prefix, link, bgColor }) => {
           }
           .certificate:hover {
             transition: 0.3s linear;
-            transform: scale(1.1);
+            transform: scale(1.05);
           }
         `}</style>
       </div>

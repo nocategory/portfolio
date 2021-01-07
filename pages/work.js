@@ -51,7 +51,7 @@ const Work = ({ serverData }) => {
         ))}
       </div>
       <div className="certificates" id="certificates">
-        <h1 style={{ textAlign: 'center' }}>Certificates</h1>
+        <h1 style={{ textAlign: 'center' }}>Completed courses</h1>
         {data.certificates.map((data) => (
           <Certificate
             key={data.name}
@@ -72,10 +72,12 @@ const Work = ({ serverData }) => {
           overflow: hidden;
         }
         .certificates {
-          max-width: 500px;
           margin: 0 auto;
           padding: 3rem;
           background-color: #fdfdfd;
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
         }
 
         @media only screen and (max-width: 1000px) {
