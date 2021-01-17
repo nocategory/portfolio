@@ -11,9 +11,9 @@ const About = () => (
         <b>Howdy mates!</b> My name is João and I'm an avid lover of programming
         in general, with a special focus on the Web front-end side, having
         previously worked as a Junior Software Developer. Recently I've been
-        focusing on better understanding how <b>React</b> works under the hood
-        and better practices to improve on my already existing knowledge of it
-        with the help of some courses such as Cassidy's{' '}
+        focusing on better understanding how <b>Javascript</b> and <b>React</b>{' '}
+        work under the hood and better practices to improve on my already
+        existing knowledge with the help of some courses such as Cassidy's{' '}
         <a href="https://scrimba.com/course/greusablereact/" target="_blank">
           amazing advanced tutorial
         </a>{' '}
@@ -21,9 +21,17 @@ const About = () => (
       </p>
       <p>
         I've also been looking into mobile development more and more due to how
-        big the mobile landscape is nowadays, and these are in my opinion some
-        of the most precious qualities in this industry: the will to learn &
-        change, the curiosity, the 🔥 <b>inside your soul</b>!
+        big the mobile landscape is nowadays with the help of courses such as
+        Kadi Kraman's{' '}
+        <a
+          href="https://frontendmasters.com/courses/react-native-v2/"
+          target="_blank"
+        >
+          one on React Native{' '}
+        </a>
+        and these are in my opinion some of the most precious qualities in this
+        industry: the will to learn & change, the curiosity and the 🔥{' '}
+        <b>inside your soul</b>!
       </p>
       <p>
         Now in a more calm note, I believe the above are some of my biggest
@@ -38,7 +46,7 @@ const About = () => (
         . Which, in my opinion, is a veeeery important skill
       </p>
       <p>
-        You can check me out on the platforms below & email me at{' '}
+        You can check me out on the platforms below or email me at{' '}
         <a href="mailto:me@nocategory.dev">me@nocategory.dev</a>
       </p>
       <div
