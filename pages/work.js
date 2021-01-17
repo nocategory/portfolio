@@ -72,12 +72,12 @@ const Work = ({ serverData }) => {
           overflow: hidden;
         }
         .certificates {
-          margin: 0 auto;
           padding: 3rem;
           background-color: #fdfdfd;
           display: flex;
           flex-direction: column;
           align-items: stretch;
+          margin-bottom: 20px;
         }
 
         @media only screen and (max-width: 1000px) {
