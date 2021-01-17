@@ -23,6 +23,7 @@
     "swr": "^0.3.11"
   },
   "devDependencies": {
-    "critters": "^0.0.6"
+    "critters": "^0.0.6",
+    "jimp": "^0.16.1"
   }
 }
