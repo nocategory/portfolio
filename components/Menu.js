@@ -66,7 +66,7 @@ const Menu = ({ bgColor }) => {
       whileHover={{ scale: 1.1 }}
       variants={menu}
       animate={isOpen ? 'open' : 'closed'}
-      style={{ backgroundColor: bgColor === dark ? light : dark }}
+      style={{ backgroundColor: bgColor === dark ? light : dark, opacity: 0.8 }}
     >
       <motion.ul
         animate={isOpen ? 'shown' : 'hidden'}
