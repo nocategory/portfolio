@@ -5,7 +5,7 @@ import { dark } from '@components/constants'
 
 const Home = () => (
   // HOMEPAGE
-  <Layout bgColor={dark} theme="dark">
+  <Layout bgImage={"url('./images/home_background.jpg')"} theme="dark">
     <Avatar />
     <BracesText>
       <b>nocategory</b>'s portfolio

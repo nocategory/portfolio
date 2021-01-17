@@ -1,10 +1,9 @@
-import { dark } from '@components/constants'
 import { motion } from 'framer-motion'
 
 const icon = {
   hidden: {
     pathLength: 0,
-    strokeWidth: 0.3,
+    strokeWidth: 0.5,
     fill: 'rgba(255, 255, 255, 0)',
   },
   visible: {
