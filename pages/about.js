@@ -47,7 +47,7 @@ const About = () => (
       </p>
       <p>
         You can check me out on the platforms below or email me at{' '}
-        <a href="mailto:me@nocategory.dev">me@nocategory.dev</a>
+        <a href="mailto:nocategory@pm.me">nocategory@pm.me</a>
       </p>
       <div
         className="social-wrapper"
